@@ -1,0 +1,34 @@
+{
+  "seller": [
+    {
+      "name": "Abu Suraj",
+      "email": "abusurajbd@gmail.com",
+      "password": "abc123",
+      "id": 1
+    },
+    {
+      "name": "",
+      "email": "support+admin@lbhpartners.com",
+      "password": "Qwertyuiop1",
+      "id": 2
+    },
+    {
+      "name": "squander ",
+      "email": "support+admin@lbhpartners.com",
+      "password": "Qwertyuiop1",
+      "id": 3
+    },
+    {
+      "name": "sanjida chowdhury Esha",
+      "email": "support+admadin@lbhpartners.com",
+      "password": "Qwertyuiop1",
+      "id": 4
+    },
+    {
+      "name": "willpower ",
+      "email": "support+adsdfmin@lbhpartners.com",
+      "password": "Qwertyuiop1",
+      "id": 5
+    }
+  ]
+}
