@@ -29,6 +29,12 @@
       "email": "support+adsdfmin@lbhpartners.com",
       "password": "Qwertyuiop1",
       "id": 5
+    },
+    {
+      "name": "willpower ",
+      "email": "a@b.com",
+      "password": "abc123",
+      "id": 6
     }
   ]
 }
