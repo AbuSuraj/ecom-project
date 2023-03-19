@@ -36,5 +36,43 @@
       "password": "abc123",
       "id": 6
     }
+  ],
+  "products": [
+    {
+      "name": "i phone 14",
+      "price": "100000",
+      "color": "Black",
+      "category": "mobiles",
+      "description": "Hello Users",
+      "image": "https://adminapi.applegadgetsbd.com/storage/media/large/iPhone-14-Pro-Max-9907.jpg",
+      "id": 1
+    },
+    {
+      "name": "Samsung",
+      "price": "2342423",
+      "color": "Green",
+      "category": "mobile",
+      "description": "hello Samsung user",
+      "image": "https://www.excelestore.com.bd/public/uploads/all/Ubdj9Jm1nR7KBsL9EDHO5uRZ9llN1J8yGA3ZKoMv.webp",
+      "id": 2
+    },
+    {
+      "name": " fan",
+      "price": "23432",
+      "color": "Greeb",
+      "category": "Fan",
+      "description": "dgfdg",
+      "image": "sf",
+      "id": 3
+    },
+    {
+      "name": "",
+      "price": "",
+      "color": "",
+      "category": "",
+      "description": "",
+      "image": "",
+      "id": 4
+    }
   ]
 }
