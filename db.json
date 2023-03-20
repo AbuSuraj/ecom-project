@@ -39,31 +39,13 @@
   ],
   "products": [
     {
-      "name": "i phone 14",
-      "price": "100000",
-      "color": "Black",
-      "category": "mobiles",
-      "description": "Hello Users",
-      "image": "https://adminapi.applegadgetsbd.com/storage/media/large/iPhone-14-Pro-Max-9907.jpg",
-      "id": 1
-    },
-    {
-      "name": "",
-      "price": "",
-      "color": "",
-      "category": "",
-      "description": "",
-      "image": "",
-      "id": 4
-    },
-    {
-      "name": "",
-      "price": "",
-      "color": "",
-      "category": "",
-      "description": "",
-      "image": "",
-      "id": 5
+      "name": "Emon Ahmed chowdhury",
+      "price": "231",
+      "color": "brown",
+      "category": "Man",
+      "description": "Hello emon",
+      "image": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "id": 6
     }
   ]
 }

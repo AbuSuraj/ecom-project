@@ -1,4 +1,4 @@
-<div class="add-product">
+<div class="update-product">
     <h1>Update Product</h1>
     <p class="message-p">{{productUpdateMessage}}</p>
     <form #addProduct = "ngForm" (ngSubmit)="submit(addProduct.value)" class="common-form">
@@ -8,7 +8,7 @@
         <input class="form-input" ngModel="{{productData?.category}}" name="category" type="text" placeholder="Enter Product Category">
         <textarea  class="form-input" ngModel="{{productData?.description}}" type="text" name="description" placeholder="Enter Product Description">
         </textarea> 
-        <input class="form-input" ngModel name="image" type="text" placeholder="Enter Product Image URL">
+        <input class="form-input" ngModel="{{productData?.image}}" name="image" type="text" placeholder="Enter Product Image URL">
         <button class="form-button">Update Product</button>
     </form>
     </div>

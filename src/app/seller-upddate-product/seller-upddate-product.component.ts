@@ -19,14 +19,15 @@ export class SellerUpddateProductComponent implements OnInit {
     let productID = this.route.snapshot.paramMap.get('id');
     
     productID && this.product.getAProduct(productID).subscribe(data =>{
-      console.log(data);
       this.productData = data;
+      console.log(this.productData)
     })
   }
   submit(data:product){
-    console.log(data);
-
-    this.product.updateProduct(data.id, data).subscribe((result)=>{
+      if(this.productData){
+        data.id = this.productData.id
+      }
+    this.product.updateProduct( data).subscribe((result)=>{
       console.log(result);
       if(result){
         this.productUpdateMessage = "Product is successfully updated."
