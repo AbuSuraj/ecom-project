@@ -8,6 +8,7 @@ export interface Login {
     password: string,
 }
 export interface product {
+    id: number,
     name: string,
     price: number, 
     category: string,
