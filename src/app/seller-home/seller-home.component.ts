@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import { product } from '../data-types';
 import { ProductService } from '../services/product.service';
 
@@ -12,11 +13,11 @@ export class SellerHomeComponent implements OnInit {
   productList: undefined | product[];
   productDeleteMessage: undefined | string;
   constructor(private product: ProductService) { }
-
+  deleteIcon = faTrash;
   ngOnInit(): void {
     this.list();
   }
-  
+
    deleteProduct(id:number){
     console.log(id);
     this.product.deleteProduct(id).subscribe(result =>{
