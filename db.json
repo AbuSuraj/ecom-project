@@ -48,13 +48,22 @@
       "id": 1
     },
     {
-      "name": "Samsung",
-      "price": "2342423",
-      "color": "Green",
-      "category": "mobile",
-      "description": "hello Samsung user",
-      "image": "https://www.excelestore.com.bd/public/uploads/all/Ubdj9Jm1nR7KBsL9EDHO5uRZ9llN1J8yGA3ZKoMv.webp",
-      "id": 2
+      "name": "",
+      "price": "",
+      "color": "",
+      "category": "",
+      "description": "",
+      "image": "",
+      "id": 4
+    },
+    {
+      "name": "",
+      "price": "",
+      "color": "",
+      "category": "",
+      "description": "",
+      "image": "",
+      "id": 5
     }
   ]
 }

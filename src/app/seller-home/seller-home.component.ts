@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import { faTrash,faEdit } from '@fortawesome/free-solid-svg-icons';
 import { product } from '../data-types';
 import { ProductService } from '../services/product.service';
 
@@ -12,14 +12,16 @@ export class SellerHomeComponent implements OnInit {
 
   productList: undefined | product[];
   productDeleteMessage: undefined | string;
+  productUpdateMessage: undefined | string;
   constructor(private product: ProductService) { }
+
   deleteIcon = faTrash;
+  updateIcon = faEdit;
   ngOnInit(): void {
     this.list();
   }
 
    deleteProduct(id:number){
-    console.log(id);
     this.product.deleteProduct(id).subscribe(result =>{
       if(result){
         this.productDeleteMessage = "Product Deleted Succefully";
@@ -29,6 +31,11 @@ export class SellerHomeComponent implements OnInit {
     setTimeout(() => {
       this.productDeleteMessage = undefined
     }, 3000);
+   }
+
+   editProduct(id:number ){
+    const data = 3;
+   
    }
    list(){
     this.product.productList().subscribe( result =>{
