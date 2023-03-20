@@ -46,6 +46,33 @@
       "description": "Hello emon",
       "image": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "id": 6
+    },
+    {
+      "name": "Asad modoni",
+      "price": "123",
+      "color": "green",
+      "category": "weff",
+      "description": "sdfdsf",
+      "image": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "id": 7
+    },
+    {
+      "name": " fan",
+      "price": "2313",
+      "color": "Green",
+      "category": "Man",
+      "description": "hello",
+      "image": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "id": 8
+    },
+    {
+      "name": "think Pad",
+      "price": "30000",
+      "color": "Black",
+      "category": "Laptop",
+      "description": "Good",
+      "image": "https://www.lenovo.com/medias/lenovo-laptops-thinkpad-x1-carbon-gen-10-hero.png?context=bWFzdGVyfHJvb3R8NDk2OTY3fGltYWdlL3BuZ3xoZWQvaDdiLzEzMTM1OTk1NTY4MTU4LnBuZ3xmNGQzMmI4ZTA3M2UyN2YxYjdkMTk2YTk3NmVlNDYyOWFmZGIzYjk4ZjMyNzRmZTQ5ZjE4YTI0YmJmYTI2YTFj",
+      "id": 9
     }
   ]
 }
