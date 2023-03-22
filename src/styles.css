@@ -34,7 +34,7 @@ cursor: pointer;
     background-color: #00000082;
     border-radius: 5px;
 }
-.carousel-caption-next-icon, .carousel-caption-prev-icon{
+.carousel-control-next-icon, .carousel-control-prev-icon{
     background-color: #00000082;
     border-radius: 5px;
 }
