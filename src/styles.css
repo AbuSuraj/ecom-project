@@ -30,3 +30,11 @@ cursor: pointer;
 .message-p{
     color: green;
 }
+.carousel-caption{
+    background-color: #00000082;
+    border-radius: 5px;
+}
+.carousel-caption-next-icon, .carousel-caption-prev-icon{
+    background-color: #00000082;
+    border-radius: 5px;
+}
