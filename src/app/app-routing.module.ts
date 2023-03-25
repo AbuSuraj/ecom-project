@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './auth.guard';
 import { HomeComponent } from './home/home.component';
+import { ProductDeatilComponent } from './product-deatil/product-deatil.component';
 import { SearchComponent } from './search/search.component';
 import { SellerAddProductComponent } from './seller-add-product/seller-add-product.component';
 import { SellerAuthComponent } from './seller-auth/seller-auth.component';
@@ -35,6 +36,11 @@ const routes: Routes = [
   {
     path: 'search/:query',
     component: SearchComponent,
+    canActivate:[AuthGuard]
+  },
+  {
+    path: 'detail/:productId',
+    component: ProductDeatilComponent,
     canActivate:[AuthGuard]
   },
 ];
