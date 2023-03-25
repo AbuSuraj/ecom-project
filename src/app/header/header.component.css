@@ -63,3 +63,9 @@ h1 a{
   cursor: pointer;
   color: blueviolet;
 }
+.search-item{
+  margin: 25px auto;
+  width: 80px;
+  border-top: 1px solid #ddd;
+  padding: 10px;
+}

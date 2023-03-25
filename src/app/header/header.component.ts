@@ -52,6 +52,10 @@ searchProduct(query: KeyboardEvent){
     })
   }
 }
+submitSearch(value: string){
+  console.log(value);
+  this.route.navigate([`/search/${value}`])
+}
 hideSearch(){
   this.searchResult = undefined
 }
