@@ -1,99 +1,14 @@
-<div class="row search-item">
+<div class="row search-item" *ngFor="let item of searchResult">
     <div class="col-sm-3">
-        <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="product">
+        <img src="{{item.image}}" alt="product">
     </div>
     <div class="col-sm-8 details">
-        <h6>Product Name</h6>
-        <p><b>Price:</b></p>
-        <p><span>Color: </span><span> Category: </span></p>
-        <p>A Product Search UI</p>
+        <h6>Product Name: {{item.name}}</h6>
+        <p><b>Price: {{item.price}}</b></p>
+        <p><span>Color: {{item.color}}</span><span> Category: {{item.category}}</span></p>
+        <p>{{item.description}}</p>
     </div>
 </div>
-<div class="row search-item">
-    <div class="col-sm-3">
-        <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="product">
-    </div>
-    <div class="col-sm-8 details">
-        <h6>Product Name</h6>
-        <p><b>Price:</b></p>
-        <p><span>Color: </span><span> Category: </span></p>
-        <p>A Product Search UI</p>
-    </div>
-</div>
-<div class="row search-item">
-    <div class="col-sm-3">
-        <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="product">
-    </div>
-    <div class="col-sm-8 details">
-        <h6>Product Name</h6>
-        <p><b>Price:</b></p>
-        <p><span>Color: </span><span> Category: </span></p>
-        <p>A Product Search UI</p>
-    </div>
-</div>
-<div class="row search-item">
-    <div class="col-sm-3">
-        <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="product">
-    </div>
-    <div class="col-sm-8 details">
-        <h6>Product Name</h6>
-        <p><b>Price:</b></p>
-        <p><span>Color: </span><span> Category: </span></p>
-        <p>A Product Search UI</p>
-    </div>
-</div>
-<div class="row search-item">
-    <div class="col-sm-3">
-        <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="product">
-    </div>
-    <div class="col-sm-8 details">
-        <h6>Product Name</h6>
-        <p><b>Price:</b></p>
-        <p><span>Color: </span><span> Category: </span></p>
-        <p>A Product Search UI</p>
-    </div>
-</div>
-<div class="row search-item">
-    <div class="col-sm-3">
-        <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="product">
-    </div>
-    <div class="col-sm-8 details">
-        <h6>Product Name</h6>
-        <p><b>Price:</b></p>
-        <p><span>Color: </span><span> Category: </span></p>
-        <p>A Product Search UI</p>
-    </div>
-</div>
-<div class="row search-item">
-    <div class="col-sm-3">
-        <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="product">
-    </div>
-    <div class="col-sm-8 details">
-        <h6>Product Name</h6>
-        <p><b>Price:</b></p>
-        <p><span>Color: </span><span> Category: </span></p>
-        <p>A Product Search UI</p>
-    </div>
-</div>
-<div class="row search-item">
-    <div class="col-sm-3">
-        <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="product">
-    </div>
-    <div class="col-sm-8 details">
-        <h6>Product Name</h6>
-        <p><b>Price:</b></p>
-        <p><span>Color: </span><span> Category: </span></p>
-        <p>A Product Search UI</p>
-    </div>
-</div>
-<div class="row search-item">
-    <div class="col-sm-3">
-        <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="product">
-    </div>
-    <div class="col-sm-8 details">
-        <h6>Product Name</h6>
-        <p><b>Price:</b></p>
-        <p><span>Color: </span><span> Category: </span></p>
-        <p>A Product Search UI</p>
-    </div>
+<div *ngIf="searchResult?.length ===0">
+<h2 class="text-center mt-4">No Product found.</h2>
 </div>
