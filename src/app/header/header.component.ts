@@ -59,4 +59,9 @@ submitSearch(value: string){
 hideSearch(){
   this.searchResult = undefined
 }
+reDirectTo(id:number){
+this.route.navigate([`/detail/${id}`])
+// this.route.navigate(['/detail/',id])
+// this.route.navigate(['/detail/'+id])
+}
 }
