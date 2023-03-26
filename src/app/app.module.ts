@@ -15,6 +15,7 @@ import { SellerUpddateProductComponent } from './seller-upddate-product/seller-u
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SearchComponent } from './search/search.component';
 import { ProductDeatilComponent } from './product-deatil/product-deatil.component';
+import { UserAuthComponent } from './user-auth/user-auth.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ProductDeatilComponent } from './product-deatil/product-deatil.componen
     SellerAddProductComponent,
     SellerUpddateProductComponent,
     SearchComponent,
-    ProductDeatilComponent
+    ProductDeatilComponent,
+    UserAuthComponent
   ],
   imports: [
     BrowserModule,
