@@ -9,8 +9,7 @@ import { Injectable } from '@angular/core';
 export class UserService {
 
   constructor(private http: HttpClient, private router: Router) { }
-  userSignUp(user:SignUp){
-    // console.log(user);
+  userSignUp(user:SignUp){ 
     this.http.post("http://localhost:3000/users",user,{observe: 'response'}).subscribe(result=>{
       console.log(result);
       if(result){
