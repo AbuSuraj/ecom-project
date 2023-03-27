@@ -19,7 +19,6 @@ quantity: number = 1;
     console.warn(productId);
     
     productId && this.product.getAProduct(productId).subscribe(data => {
-      console.log(data);
       this.productDetails = data;
     })
   }
