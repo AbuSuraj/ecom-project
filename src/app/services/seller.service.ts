@@ -34,11 +34,9 @@ export class SellerService {
       console.log(result);
       if(result && result.body &&result.body.length){
         localStorage.setItem('seller', JSON.stringify(result.body))
-        this.router.navigate(['seller-home'])
-        console.log("user loggedin successfully")
+        this.router.navigate(['seller-home']) 
       }
       else{
-        console.log("loggin fail")
         this.isLoginError.emit(true)
       }
     })
