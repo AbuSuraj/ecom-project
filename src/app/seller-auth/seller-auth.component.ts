@@ -16,7 +16,7 @@ export class SellerAuthComponent implements OnInit {
     showLogin = false;
     authError:string = "";
   ngOnInit(): void {
-  }
+  }     
   signUp(data:SignUp):void{
     this.seller.userSignUp(data)
   }
