@@ -12,7 +12,7 @@ export class SellerAuthComponent implements OnInit {
 
   constructor(
     private seller:SellerService,
-    private router: Router) { }
+    private router: Router) { } 
     showLogin = false;
     authError:string = "";
   ngOnInit(): void {
