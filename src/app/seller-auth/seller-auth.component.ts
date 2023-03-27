@@ -20,8 +20,7 @@ export class SellerAuthComponent implements OnInit {
   signUp(data:SignUp):void{
     this.seller.userSignUp(data)
   }
-  login(data:Login):void{
-    // console.warn(data);
+  login(data:Login):void{ 
     this.authError= " "
     this.seller.userLogin(data);
     this.seller.isLoginError.subscribe((isError)=>{
