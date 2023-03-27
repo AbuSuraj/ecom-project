@@ -120,7 +120,24 @@
       "id": 14
     }
   ],
-  "users":[
-    
+  "users": [
+    {
+      "name": "CDD",
+      "email": "support+admin@lbhpartners.com",
+      "password": "Qwertyuiop1",
+      "id": 1
+    },
+    {
+      "name": "Emon Ahmed",
+      "email": "support+admin@lbhpartners.com",
+      "password": "Qwertyuiop1",
+      "id": 2
+    },
+    {
+      "name": "ab",
+      "email": "a@b.com",
+      "password": "abc123",
+      "id": 3
+    }
   ]
 }
