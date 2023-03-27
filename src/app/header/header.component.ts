@@ -44,7 +44,6 @@ searchProduct(query: KeyboardEvent){
     const element = query.target as HTMLInputElement;
     console.log(element.value);
     this.product.searchProducts(element.value).subscribe(result =>{
-      console.log(result)
       this.searchResult = result;
       if(result.length >5 ){
         result.length = 5;
