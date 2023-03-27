@@ -18,8 +18,7 @@ export class SellerAddProductComponent implements OnInit {
   ngOnInit(): void {
   }
   submit(data:product){
-    this.product.addProduct(data).subscribe((result)=>{
-      console.log(result);
+    this.product.addProduct(data).subscribe((result)=>{ 
       if(result){
         this.addProductMessage = "Product is successfully added"
       }
