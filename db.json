@@ -138,6 +138,30 @@
       "email": "a@b.com",
       "password": "abc123",
       "id": 3
+    },
+    {
+      "name": "tony kross",
+      "email": "tony@kross.com",
+      "password": "Qwertyuiop1",
+      "id": 4
+    },
+    {
+      "name": "Ton",
+      "email": "tony@kross.com",
+      "password": "Qwertyuiop1",
+      "id": 5
+    },
+    {
+      "name": "tony kross",
+      "email": "tony@kross.com",
+      "password": "Qwertyuiop1",
+      "id": 6
+    },
+    {
+      "name": "tony kross",
+      "email": "tony@kross.com",
+      "password": "Qwertyuiop1",
+      "id": 7
     }
   ]
 }
