@@ -19,6 +19,7 @@ export class UserAuthComponent implements OnInit {
  }
  signin(data:Login){
     // this.user.userSignUp(data);
+    this.user.userLogin(data);
  }
  openLogin(){
 this.userLogin = true

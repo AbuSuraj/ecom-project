@@ -162,6 +162,12 @@
       "email": "tony@kross.com",
       "password": "Qwertyuiop1",
       "id": 7
+    },
+    {
+      "name": "Emon Ahmed",
+      "email": "emon@b.com",
+      "password": "abc123",
+      "id": 8
     }
   ]
 }
