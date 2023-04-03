@@ -9,6 +9,7 @@ import { UserService } from '../services/user.service';
 })
 export class UserAuthComponent implements OnInit {
   userLogin:Boolean = false;
+  authError: string = '';
   constructor(private user:UserService) { }
 
   ngOnInit(): void {
@@ -20,6 +21,11 @@ export class UserAuthComponent implements OnInit {
  signin(data:Login){
     // this.user.userSignUp(data);
     this.user.userLogin(data);
+    this.user.inValidUserAuth.subscribe(result =>{
+      if(result){
+        this.authError = "please enter valid user authentication"
+      }
+    })
  }
  openLogin(){
 this.userLogin = true

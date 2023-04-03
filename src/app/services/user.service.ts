@@ -1,13 +1,13 @@
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { Login, SignUp } from './../data-types';
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
-
+  inValidUserAuth = new EventEmitter<Boolean>(false);
   constructor(private http: HttpClient, private router: Router) { }
   userSignUp(user:SignUp){ 
     this.http.post("http://localhost:3000/users",user,{observe: 'response'}).subscribe(result=>{
@@ -21,10 +21,14 @@ export class UserService {
   userLogin(user:Login){
     this.http.get<SignUp[]>(`http://localhost:3000/users?email=${user.email}&password=${user.password}`,{observe:'response'})
     .subscribe(result =>{
-      if(result && result.body){
+      if(result && result.body?.length){
         console.log(result.body)
+        this.inValidUserAuth.emit(false);
         localStorage.setItem("user", JSON.stringify(result.body[0]));
         this.router.navigate(['/']);
+      }
+      else{
+        this.inValidUserAuth.emit(true) ;
       }
     })
   }

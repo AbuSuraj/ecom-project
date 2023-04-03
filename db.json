@@ -168,6 +168,12 @@
       "email": "emon@b.com",
       "password": "abc123",
       "id": 8
+    },
+    {
+      "name": "",
+      "email": "a@b.com",
+      "password": "abc123rr",
+      "id": 9
     }
   ]
 }

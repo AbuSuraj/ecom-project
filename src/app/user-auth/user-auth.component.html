@@ -11,7 +11,8 @@
    </div>
    <div *ngIf="userLogin" class="sign-in">
       <h1>User Login</h1>
-       <form class="common-form" #userSignin="ngForm" (ngSubmit)="signin(userSignin.value)">
+      <form class="common-form" #userSignin="ngForm" (ngSubmit)="signin(userSignin.value)">
+          <p class="error-p">{{authError}}</p>
           <input class="form-input" ngModel name="email" type="email" placeholder="Enter Your email" required #email="ngModel">
           <p class="invalid-input"><span *ngIf="email.invalid && email.touched"> Please Enter a Valid Email</span></p>
           <input class="form-input" ngModel name="password" type="password" placeholder="Enter Your password" required #password="ngModel">
