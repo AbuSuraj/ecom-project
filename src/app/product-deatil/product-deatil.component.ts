@@ -30,4 +30,16 @@ quantity: number = 1;
       this.productQuantity = this.productQuantity-1;
     }
   }
+  addToCart(){
+    if(this.productDetails){
+      this.productDetails.quantity = this.productQuantity;
+      if(!localStorage.getItem('user')){
+        console.log(this.productDetails.quantity);
+        this.product.localAddToCart(this.productDetails)
+      }
+      else{
+        console.log("loggedin");
+      }
+    }
+  }
 }

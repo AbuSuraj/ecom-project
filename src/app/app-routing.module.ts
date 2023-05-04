@@ -42,7 +42,6 @@ const routes: Routes = [
   {
     path: 'detail/:productId',
     component: ProductDeatilComponent,
-    canActivate:[AuthGuard]
   },
   {
     path: 'user-auth',
